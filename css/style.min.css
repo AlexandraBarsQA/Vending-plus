@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Bahnschrift";
   src: url("../fonts/bahnschrift.woff2") format("woff2"), url("../fonts/bahnschrift.woff") format("woff");
-  font-variation-settings: 'wght' 100, 'wdth' 80;
+  font-variation-settings: 'wght' 300, 'wdth' 75;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Bahnschrift";
   src: url("../fonts/bahnschrift.woff2") format("woff2"), url("../fonts/bahnschrift.woff") format("woff");
-  font-variation-settings: 'wght' 700, 'wdth' 80;
+  font-variation-settings: 'wght' 700, 'wdth' 75;
   font-style: normal;
   font-display: swap; }
 
@@ -43,6 +43,7 @@
 body {
   height: 100%;
   font-family: "Bahnschrift", "Arial", sans-serif;
+  font-variation-settings: 'wght' 300, 'wdth' 75;
   margin: 0;
   padding: 0; }
 
@@ -207,7 +208,7 @@ input[name="toggle"] {
   font-family: inherit;
   font-size: 83px;
   line-height: calc(87 / 83 * 100%);
-  font-weight: 700;
+  font-variation-settings: 'wght' 700, 'wdth' 75;
   color: var(--basic-main); }
 
 .content h2 > a {
@@ -217,7 +218,7 @@ input[name="toggle"] {
   font-family: inherit;
   font-size: 25px;
   line-height: calc(28 / 25 * 100%);
-  font-weight: 300;
+  font-variation-settings: 'wght' 300, 'wdth' 70;
   color: var(--basic-main); }
 
 .page-header__top {
@@ -612,7 +613,7 @@ li.crumb-item--current {
 
 .announce__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 480px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   grid-auto-rows: 368px;
   align-items: center; }
 
@@ -702,9 +703,9 @@ li.crumb-item--current {
 
 .card-goods {
   display: grid;
-  grid-template-columns: repeat(6, minmax(auto, 250px));
-  -moz-column-gap: 65px;
-       column-gap: 65px;
+  grid-template-columns: repeat(6, minmax(180px, auto));
+  -moz-column-gap: 60px;
+       column-gap: 60px;
   row-gap: 40px;
   outline: 2px solid blue; }
 
@@ -716,6 +717,7 @@ li.crumb-item--current {
   text-decoration: none; }
 
 .card-goods p {
+  letter-spacing: -0.8px;
   color: var(--basic-brand);
   margin-top: 18px; }
 
