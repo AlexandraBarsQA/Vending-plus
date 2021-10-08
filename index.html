@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Vending-plus</title>
+  <link rel="preload" href="/fonts/ERASMD.woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/Bahnschrift.woff2" as="font" crossorigin>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page__body">
+  <div class="wrapper-body">
+    <header class="page-header">
+      <div class="page-header__top header-top container">
+        <form class="form-search" action="" method="get">
+          <label class="visually-hidden" for="search-form-input">Поле поиска</label>
+          <input type="search" placeholder="поиск по каталогу" id="search-form-input" required="">
+          <button type="submit" class="form-search__btn">Найти</button>
+        </form>
+        <a class="header-top__tel" href="tel:+78004503434">8 800 450-34-34</a>
+      </div>
+      <div class="page-header__nav navigation">
+        <div class="container">
+          <nav class="navigation__wrap main-nav main-nav--closed">
+            <a class="navigation__logo logo" href="index.html">
+              <div class="ibg">
+                <img src="img/logo_main.svg" alt="Логотип vending plus">
+              </div>
+              <p>vending plus</p>
+            </a>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <ul class="main-nav__menu menu">
+              <li>
+                <a href="#">что такое вендинг?</a>
+              </li>
+              <li>
+                <a href="#">бизнес с нами</a>
+              </li>
+              <li>
+                <a href="#">оплата и доставка</a>
+              </li>
+              <li>
+                <a href="#">каталог</a>
+              </li>
+              <li>
+                <a href="#">интернет-магазин</a>
+              </li>
+              <li>
+                <a href="#">контакты</a>
+              </li>
+            </ul>
+            <a class="main-nav__basket" href="basket.html">
+              <img src="img/basket.png" width="" height="" alt="корзина товаров">
+              <span>12</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="slider-main swiper-container">
+        <div class="slider-main__wrapper swiper-wrapper">
+          <div class="slider-main__item swiper-slide">
+            <div class="slider-main__img ibg">
+              <img src="img/slider-back_01.jpg">
+            </div>
+            <div class="slider-main__desc description container">
+              <section>
+                <h1>Начните свой бизнес с нами</h1>
+                <p>Откройте мини-кофейню или торговую точку без сотрудников и постоянного персонала.</p>
+                <p>Поможем подобрать <a href="#">место</a>, <a href="#">оборудование</a> и <a href="#">ассортимент</a>.</p>
+                <a class="slider-main__button button" href="#" title="">подробнее</a>
+              </section>
+              <div class="description__img ibg">
+                <img src="img/slider-machine_01.png" alt="coffee-machines">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="slider-main__toggle slider-main__toggle--prev swiper-button-prev"></div>
+          <div class="slider-main__toggle slider-main__toggle--next swiper-button-next"></div>
+        </div>
+      </div>
+      <section class="page-main__all-vending all-vending content container">
+        <h2><a href="#" title="">Всё</a> для вендинга</h2>
+        <ul class="all-vending__catalog catalog-mashines">
+          <li>
+            <a class="catalog-mashines__link" href="#">
+              <div class="catalog-mashines__img">
+                <img src="img/FRANKE A400 FM CM.jpg" alt="капсульная кофемашина">
+              </div>
+              <p class="catalog-mashines__text">
+                <span class="catalog-mashines__type">капсульная кофемашина</span>
+                <span class="catalog-mashines__name">la precisa</span>
+                <span class="catalog-mashines__brand">Gaggia</span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <a class="catalog-mashines__link" href="#">
+              <div class="catalog-mashines__img">
+                <img src="img/FRANKE S700.jpg" alt="капсульная кофемашина">
+              </div>
+              <p class="catalog-mashines__text">
+                <span class="catalog-mashines__type">капсульная кофемашина капсульная кофемашина</span>
+                <span class="catalog-mashines__name">la precisa</span>
+                <span class="catalog-mashines__brand">Gaggia</span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <a class="catalog-mashines__link" href="#">
+              <div class="catalog-mashines__img">
+                <img src="img/CLASSY&MILK для капсул LB.jpg" alt="капсульная кофемашина">
+              </div>
+              <p class="catalog-mashines__text">
+                <span class="catalog-mashines__type">капсульная кофемашина</span>
+                <span class="catalog-mashines__name">la precisa la precisa la precisa</span>
+                <span class="catalog-mashines__brand">Gaggia</span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <a class="catalog-mashines__link" href="#">
+              <div class="catalog-mashines__img">
+                <img src="img/Necta kikko MAX TO GO.jpg" alt="капсульная кофемашина">
+              </div>
+              <p class="catalog-mashines__text">
+                <span class="catalog-mashines__type">капсульная кофемашина</span>
+                <span class="catalog-mashines__name">la precisa</span>
+                <span class="catalog-mashines__brand">Gaggia</span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <a class="catalog-mashines__link" href="#">
+              <div class="catalog-mashines__img">
+                <img src="img/Rheavendors Snack Europa.jpg" alt="капсульная кофемашина">
+              </div>
+              <p class="catalog-mashines__text">
+                <span class="catalog-mashines__type">капсульная кофемашина</span>
+                <span class="catalog-mashines__name">la precisa</span>
+                <span class="catalog-mashines__brand">Gaggia</span>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-main__announce announce container content">
+        <h2 class="visually-hidden">Наше производство</h2>
+        <ul class="announce__list">
+          <li class="announce__item">
+            <div class="announce__item__img ibg">
+              <img src="img/announce-img-01.jpg" alt="">
+            </div>
+            <div class="announce__decs">
+              <p>специализированное оборудование, комплектующие и&nbsp;сырьё от лучших прозводителей</p>
+              <a class="button" href="#" title="">кафе и рестораны</a>
+            </div>
+          </li>
+          <li class="announce__item">
+            <div class="announce__item__img ibg">
+              <img src="img/announce-img-02.jpg" alt="">
+            </div>
+            <div class="announce__decs">
+              <p>специализированное оборудование, комплектующие и&nbsp;сырьё от лучших прозводителей</p>
+              <a class="button" href="#" title="">кафе и рестораны</a>
+            </div>
+          </li>
+          <li class="announce__item">
+            <div class="announce__item__img ibg">
+              <img src="img/announce-img-03.jpg" alt="">
+            </div>
+            <div class="announce__decs">
+              <p>специализированное оборудование, комплектующие и&nbsp;сырьё от лучших прозводителей</p>
+              <a class="button" href="#" title="">кафе и рестораны</a>
+            </div>
+          </li>
+          <li class="announce__item">
+            <div class="announce__item__img ibg">
+              <img src="img/announce-img-04.jpg" alt="">
+            </div>
+            <div class="announce__decs">
+              <p>специализированное оборудование, комплектующие и&nbsp;сырьё от лучших прозводителей</p>
+              <a class="button" href="#" title="">кафе и рестораны</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="page-main__online buy-online content container">
+        <h2>Купите <a href="#" title="">онлайн</a> </h2>
+        <ul class="buy-online__goods card-goods">
+          <li>
+            <a class="card-goods__link" href="#">
+              <div class="card-goods__img ibg">
+                <img src="img/online-img-01.png" alt="paper-cup">
+              </div>
+              <p>Стакан бумажный, 58&nbsp;шт</p>
+            <p class="card-goods__price price-card">327 ₽</p>
+            </a>
+          </li>
+          <li>
+            <a class="card-goods__link" href="#">
+              <div class="card-goods__img ibg">
+                <img src="img/online-img-02.png" alt="paper-cup">
+              </div>
+              <p>Стакан бумажный, 58&nbsp;шт</p>
+            <p class="card-goods__price price-card">327 ₽</p>
+            </a>
+          </li>
+          <li>
+            <a class="card-goods__link" href="#">
+              <div class="card-goods__img ibg">
+                <img src="img/online-img-03.png" alt="paper-cup">
+              </div>
+              <p>Стакан бумажный, 58&nbsp;шт</p>
+            <p class="card-goods__price price-card">327 ₽</p>
+            </a>
+          </li>
+          <li>
+            <a class="card-goods__link" href="#">
+              <div class="card-goods__img ibg">
+                <img src="img/online-img-04.png" alt="paper-cup">
+              </div>
+              <p>Стакан бумажный, 58&nbsp;шт</p>
+            <p class="card-goods__price price-card">327 ₽</p>
+            </a>
+          </li>
+          <li>
+            <a class="card-goods__link" href="#">
+              <div class="card-goods__img ibg">
+                <img src="img/online-img-05.png" alt="paper-cup">
+              </div>
+              <p>Стакан бумажный, 58&nbsp;шт</p>
+            <p class="card-goods__price price-card">327 ₽</p>
+            </a>
+          </li>
+          <li>
+            <a class="card-goods__link" href="#">
+              <div class="card-goods__img ibg">
+                <img src="img/online-img-06.png" alt="paper-cup">
+              </div>
+              <p>Стакан бумажный, 58&nbsp;шт</p>
+            <p class="card-goods__price price-card">327 ₽</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-main__advantages advantages content">
+        <div class="container">
+          <div class="advantages__wrap">
+            <h2>Преимущества вендинга</h2>
+            <a class="button" href="#" title="">получить предложение</a>
+          </div>
+          <ul class="advantages__list">
+            <li>
+              <h4>Автономность</h4>
+              <p class="advantages__text">Автономная работа оборудования круглые сутки без постоянного присутствия человека позволяет избежать лишних издержек на персонал.</p>
+            </li>
+            <li>
+              <h4>Автономность</h4>
+              <p class="advantages__text">Автономная работа оборудования круглые сутки без постоянного присутствия человека позволяет избежать лишних издержек на персонал.</p>
+            </li>
+            <li>
+              <h4>Автономность</h4>
+              <p class="advantages__text">Автономная работа оборудования круглые сутки без постоянного присутствия человека позволяет избежать лишних издержек на персонал.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__nav nav-footer container content">
+        <article class="nav-footer__contacts">
+          <p>© 2021. Вендинг Плюс Рязань</p>
+          <p>ИП Солнцева Елена Александровна ОГРИП 304622925800116, ИНН 622900514474</p>
+          <p>390000, г. Рязань, ул. Новосёлов, д. 37, Р18 <a href="tel:+79036406230" title="+79036406230"> +7 903 640-62-30</a>, <a href="tel:+79209751777" title="+79209751777"> +7 920 975-17-77</a></p>
+          <a href="#" title="info@vendplus.ru">info@vendplus.ru</a>
+        </article>
+        <div class="nav-footer__menu footer-menu">
+          <article class="footer-menu__list">
+            <p class="footer-menu__label">Информация</p>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#" title="">Что такое вендинг?</a>
+              </li>
+              <li>
+                <a href="#" title="">Бизнес с нами</a>
+              </li>
+              <li>
+                <a href="#" title="">Оплата и доставка</a>
+              </li>
+            </ul>
+            <a class="nav-footer__link footer-menu__contacts" href="#" title=""></a>
+          </article>
+          <article class="footer-menu__list">
+            <p class="footer-menu__label">Информация</p>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#" title="">Что такое вендинг?</a>
+              </li>
+              <li>
+                <a href="#" title="">Бизнес с нами</a>
+              </li>
+              <li>
+                <a href="#" title="">Оплата и доставка</a>
+              </li>
+            </ul>
+            <a class="nav-footer__link footer-menu__contacts" href="#" title=""></a>
+          </article>
+          <article class="footer-menu__list">
+            <p class="footer-menu__label">Информация</p>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#" title="">Что такое вендинг?</a>
+              </li>
+              <li>
+                <a href="#" title="">Бизнес с нами</a>
+              </li>
+              <li>
+                <a href="#" title="">Оплата и доставка</a>
+              </li>
+            </ul>
+            <a class="nav-footer__link footer-menu__contacts" href="#" title=""></a>
+          </article>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/swiper.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
