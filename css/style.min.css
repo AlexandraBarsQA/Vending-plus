@@ -552,7 +552,7 @@ li.crumb-item--current {
 
 .catalog-mashines {
   display: grid;
-  grid-template-columns: repeat(5, minmax(180px, 400px));
+  grid-template-columns: repeat(5, minmax(180px, 384px));
   -moz-column-gap: 40px;
        column-gap: 40px;
   row-gap: 40px;
@@ -567,7 +567,7 @@ li.crumb-item--current {
 
 .catalog-mashines__img {
   position: relative;
-  height: 330px;
+  height: 384px;
   outline: 2px solid green; }
 
 .catalog-mashines__img img {
@@ -733,8 +733,8 @@ p.card-goods__price {
   height: 100%;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover; }
+  -o-object-fit: contain;
+     object-fit: contain; }
 
 p.price-card {
   position: relative;
