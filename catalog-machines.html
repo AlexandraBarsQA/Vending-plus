@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Vending-plus</title>
+  <link rel="preload" href="/fonts/ERASMD.woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/Bahnschrift.woff2" as="font" crossorigin>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page__body">
+  <div class="wrapper-body">
+    <header class="page-header">
+      <div class="page-header__top header-top container">
+        <form class="form-search" action="" method="get">
+          <label class="visually-hidden" for="search-form-input">Поле поиска</label>
+          <input type="search" placeholder="поиск по каталогу" id="search-form-input" required="">
+          <button type="submit" class="form-search__btn">Найти</button>
+        </form>
+        <a class="header-top__tel" href="tel:+78004503434">8 800 450-34-34</a>
+      </div>
+      <div class="page-header__nav navigation">
+        <div class="container">
+          <nav class="navigation__wrap main-nav main-nav--closed">
+            <a class="navigation__logo logo" href="index.html">
+              <div>
+                <img src="img/logo_catalog.svg" alt="Логотип vending plus">
+              </div>
+              <p>vending plus</p>
+            </a>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <ul class="main-nav__menu menu">
+              <li>
+                <a href="#">что такое вендинг?</a>
+              </li>
+              <li>
+                <a href="#">бизнес с нами</a>
+              </li>
+              <li>
+                <a href="#">оплата и доставка</a>
+              </li>
+              <li>
+                <a class="menu__link-active" href="catalog.html">каталог</a>
+              </li>
+              <li>
+                <a href="catalog-product.html">интернет-магазин</a>
+              </li>
+              <li>
+                <a href="#">контакты</a>
+              </li>
+            </ul>
+            <a class="main-nav__basket" href="basket.html">
+              <img src="img/basket.png" alt="корзина товаров">
+              <span>12</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="container">
+        <ul class="crumbs breadcrumb">
+          <li class="crumb-item">
+            <a href="index.html">главная</a>|
+          </li>
+          <li class="crumb-item">
+            <a href="catalog-product.html">каталог</a>|
+          </li>
+          <li class="crumb-item crumb-item--current">зерновые кофемашины
+          </li>
+        </ul>
+        <div class="page-main__grain grain-machines catalog-inner">
+          <div class="catalog-inner__sidebar">
+            <ul class="sidebar">
+              <li>
+                <a class="sidebar__title" href="#" title="">По устройству</a>
+                <ul class="sidebar-content">
+                  <li>
+                    <a href="#" title="">Кофейные автоматы</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Торговые автоматы</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Стойки самообслуживания</a>
+                  </li>
+                  <li>
+                    <a class="sidebar__link-active" href="#" title="">Зерновые кофемашины</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Капсульные кофемашины</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="catalog-inner__sidebar sidebar">
+              <li>
+                <a class="sidebar__title" href="#" title="">По сфере применения</a>
+                <ul class="sidebar-content">
+                  <li>
+                    <a href="#" title="">Большие пространства</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Офисные центры</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Кафе, бары и рестораны</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Для дома</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="catalog-inner__sidebar sidebar">
+              <li>
+                <a class="sidebar__title" href="#" title="">По названию бренда</a>
+                <ul class="sidebar-content">
+                  <li>
+                    <a href="#" title="">Gaggia</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Ducale</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Lavazza</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Wittenborg</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <section class="grain-machines__gallery content">
+            <h2>Зерновые кофемашины</h2>
+            <p>Зерновая кофемашина – это устройство для быстрого приготовления качественного кофе. От привычных кофеварок прибор отличается сложностью конструкции, крупными габаритами и стоимостью.</p>
+            <ul class="grain-machines__list catalog-mashines">
+              <li>
+                <a class="catalog-mashines__link" href="#">
+                  <div class="catalog-mashines__img">
+                    <img src="img/CLASSY&MILK для капсул LB.jpg" alt="капсульная кофемашина">
+                  </div>
+                  <p class="catalog-mashines__text">
+                    <span class="catalog-mashines__type">капсульная кофемашина</span>
+                    <span class="catalog-mashines__name">la precisa</span>
+                    <span class="catalog-mashines__brand">Gaggia</span>
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a class="catalog-mashines__link" href="#">
+                  <div class="catalog-mashines__img catalog-mashines__img--hit label-cofemashines label-cofemashines--hit">
+                    <img src="img/FRANKE A400 FM CM.jpg" alt="капсульная кофемашина">
+                  </div>
+                  <p class="catalog-mashines__text">
+                    <span class="catalog-mashines__type">кофейный автоматкофейный автомат </span>
+                    <span class="catalog-mashines__name">la precisa</span>
+                    <span class="catalog-mashines__brand">Lavazza</span>
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a class="catalog-mashines__link" href="#">
+                  <div class="catalog-mashines__img">
+                    <img src="img/FRANKE S700.jpg" alt="капсульная кофемашина">
+                  </div>
+                  <p class="catalog-mashines__text">
+                    <span class="catalog-mashines__type">торговый автомат</span>
+                    <span class="catalog-mashines__name">la precisa la precisa</span>
+                    <span class="catalog-mashines__brand">Bianchi Vending</span>
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a class="catalog-mashines__link" href="catalog-machines.html">
+                  <div class="catalog-mashines__img catalog-mashines__img--new label-cofemashines label-cofemashines--new">
+                    <img src="img/Necta kikko MAX TO GO.jpg" alt="капсульная кофемашина">
+                  </div>
+                  <p class="catalog-mashines__text">
+                    <span class="catalog-mashines__type">зерновая кофемашина</span>
+                    <span class="catalog-mashines__name">la precisa</span>
+                    <span class="catalog-mashines__brand">rhea</span>
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a class="catalog-mashines__link" href="#">
+                  <div class="catalog-mashines__img">
+                    <img src="img/CLASSY&MILK для капсул LB.jpg" alt="капсульная кофемашина">
+                  </div>
+                  <p class="catalog-mashines__text">
+                    <span class="catalog-mashines__type">капсульная кофемашина</span>
+                    <span class="catalog-mashines__name">la precisa</span>
+                    <span class="catalog-mashines__brand">Gaggia</span>
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a class="catalog-mashines__link" href="#">
+                  <div class="catalog-mashines__img">
+                    <img src="img/FRANKE A400 FM CM.jpg" alt="капсульная кофемашина">
+                  </div>
+                  <p class="catalog-mashines__text">
+                    <span class="catalog-mashines__type">кофейный автоматкофейный автомат </span>
+                    <span class="catalog-mashines__name">la precisa</span>
+                    <span class="catalog-mashines__brand">Lavazza</span>
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a class="catalog-mashines__link" href="#">
+                  <div class="catalog-mashines__img">
+                    <img src="img/FRANKE S700.jpg" alt="капсульная кофемашина">
+                  </div>
+                  <p class="catalog-mashines__text">
+                    <span class="catalog-mashines__type">торговый автомат</span>
+                    <span class="catalog-mashines__name">la precisa la precisa</span>
+                    <span class="catalog-mashines__brand">Bianchi Vending</span>
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a class="catalog-mashines__link" href="catalog-machines.html">
+                  <div class="catalog-mashines__img">
+                    <img src="img/Necta kikko MAX TO GO.jpg" alt="капсульная кофемашина">
+                  </div>
+                  <p class="catalog-mashines__text">
+                    <span class="catalog-mashines__type">зерновая кофемашина</span>
+                    <span class="catalog-mashines__name">la precisa</span>
+                    <span class="catalog-mashines__brand">rhea</span>
+                  </p>
+                </a>
+              </li>
+            </ul></section>
+          </div>
+        </div>
+        <section class="page-main__advantages advantages content">
+          <div class="container">
+            <div class="advantages__wrap">
+              <h2>Преимущества вендинга</h2>
+              <a class="button" href="#" title="">получить предложение</a>
+            </div>
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--autonomy">
+                <span>Автономность</span>
+                <p class="advantages__text">Автономная работа оборудования круглые сутки без постоянного присутствия человека позволяет избежать лишних издержек на персонал.</p>
+              </li>
+              <li class="advantages__item advantages__item--service">
+                <span>Легкое обслуживание</span>
+                <p class="advantages__text">Обслуживание автомата простое, не требует много времени и специальных навыков. Вы обучитесь обслуживанию при покупке автомата.</p>
+              </li>
+              <li class="advantages__item advantages__item--risks">
+                <span>Минимальные риски</span>
+                <p class="advantages__text">Вендинг – мобильный бизнес с минимальными рисками. В случае установки автомата в нерентабельной точке, его можно легко переставит</p>
+              </li>
+              <li class="advantages__item advantages__item--expenses">
+                <span>Небольшие затраты</span>
+                <p class="advantages__text">Небольшие затраты на установку и обслуживание одной точки позволяют легко развивать и масштабировать Ваш бизнес.</p>
+              </li>
+              <li class="advantages__item advantages__item--demand">
+                <span>Большой спрос</span>
+                <p class="advantages__text">Рынок находится в стадии роста и с каждым годом увеличивается спрос на данный вид услуг, увеличивается ассортимент товаров.</p>
+              </li>
+              <li class="advantages__item advantages__item--anticrisis">
+                <span>Антикризисность</span>
+                <p class="advantages__text">В сложной финансовой ситуации люди могут отказаться от дорогостоящих покупок, но могут позволить себе купить чашку кофе.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__nav nav-footer container content">
+          <article class="nav-footer__contacts">
+            <p class="nav-footer__copyright">© 2021. Вендинг Плюс Рязань</p>
+            <p class="nav-footer__info">ИП Солнцева Елена Александровна ОГРИП 304622925800116, ИНН 622900514474</p>
+            <p class="nav-footer__info">390000, г. Рязань, ул. Новосёлов, д. 37, Р18 <a href="tel:+79036406230" title="+79036406230"> +7 903 640-62-30</a>, <a href="tel:+79209751777" title="+79209751777"> +7 920 975-17-77</a></p>
+            <a class="nav-footer__mail" href="#" title="info@vendplus.ru">info@vendplus.ru</a>
+          </article>
+          <div class="nav-footer__menu footer-menu">
+            <article class="footer-menu__list">
+              <h4 class="footer-menu__label">Информация</h4>
+              <ul class="breadcrumb">
+                <li>
+                  <a href="#" title="">Что такое вендинг?</a>
+                </li>
+                <li>
+                  <a href="#" title="">Бизнес с нами</a>
+                </li>
+                <li>
+                  <a href="#" title="">Оплата и доставка</a>
+                </li>
+                <li class="footer-menu__contacts">
+                  <a href="#" title="">Контакты</a>
+                </li>
+              </ul>
+            </article>
+            <article class="footer-menu__list">
+              <h4 class="footer-menu__label">Каталог</h4>
+              <ul class="breadcrumb">
+                <li>
+                  <a href="#" title="">Кофейные автоматы</a>
+                </li>
+                <li>
+                  <a href="#" title="">Торговые автоматы</a>
+                </li>
+                <li>
+                  <a href="#" title="">Стойки самообслуживания</a>
+                </li>
+                <li>
+                  <a href="#" title="">Зерновые кофемашины</a>
+                </li>
+                <li>
+                  <a href="#" title="">Капсульные кофемашины</a>
+                </li>
+              </ul>
+            </article>
+            <article class="footer-menu__list">
+              <h4 class="footer-menu__label">Интернет-магазин</h4>
+              <ul class="breadcrumb">
+                <li>
+                  <a href="#" title="">Комплектующие</a>
+                </li>
+                <li>
+                  <a href="#" title="">Ингредиенты</a>
+                </li>
+                <li>
+                  <a href="#" title="">Аксессуары</a>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+        <div class="page-footer__business business content">
+          <p>В вашем бизнесе всё <a href="#" title="">работает само</a></p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.min.js"></script>
+  </body>
+  </html>

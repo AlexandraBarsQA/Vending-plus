@@ -27,9 +27,9 @@
       <div class="page-header__nav navigation">
         <div class="container">
           <nav class="navigation__wrap main-nav main-nav--closed">
-            <a class="navigation__logo logo">
+            <a class="navigation__logo logo" href="index.html">
               <div>
-                <img src="img/logo_main.svg" alt="Логотип vending plus">
+                <img src="img/logo_catalog.svg" alt="Логотип vending plus">
               </div>
               <p>vending plus</p>
             </a>
@@ -45,7 +45,7 @@
                 <a href="#">оплата и доставка</a>
               </li>
               <li>
-                <a href="catalog.html">каталог</a>
+                <a class="menu__link-active" href="catalog.html">каталог</a>
               </li>
               <li>
                 <a href="catalog-product.html">интернет-магазин</a>
@@ -63,57 +63,78 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="slider-main swiper-container">
-        <div class="slider-main__wrapper swiper-wrapper">
-          <div class="slider-main__item swiper-slide">
-              <img src="img/slider-back_01.jpg" alt="">
-            <div class="slider-main__desc description container">
-              <section>
-                <h1>Начните свой бизнес с нами</h1>
-                <p>Откройте мини-кофейню или торговую точку без сотрудников и постоянного персонала.</p>
-                <p>Поможем подобрать <a href="#">место</a>, <a href="#">оборудование</a> и <a href="#">ассортимент</a>.</p>
-                <a class="slider-main__button button" href="#" title="">подробнее</a>
-              </section>
-              <div class="description__img">
-                <img src="img/slider-machine_01.png" alt="coffee-machines">
+      <div class="container">
+        <ul class="crumbs breadcrumb">
+          <li class="crumb-item">
+            <a href="index.html">главная</a>|
+          </li>
+          <li class="crumb-item">
+            <a href="catalog.html">каталог</a>|
+          </li>
+          <li class="crumb-item">
+            <a href="catalog.html">кофейные автоматы</a>|
+          </li>
+          <li class="crumb-item crumb-item--current">кофейный автомат 9100
+          </li>
+        </ul>
+        <section class="page-main__product item-product content">
+          <h2 class="headline">Кофейный автомат 9100</h2>
+          <div class="item-product__wrap">
+            <div class="item-product__img">
+              <img src="img/FRANKE A400 FM CM.jpg" alt="">
+            </div>
+            <div class="item-product__info">
+              <h4>
+                <img src="img/logo-wittenborg.png" alt="wittenborg">
+              </h4>
+              <div class="item-product__parameters">
+                <p>Страна: Италия<br> Тип: для офисов, кафе<br> Вес: 75 кг<br> Размеры: 450 х 1580 х 525 мм</p>
+                <p> <span>56</span> в день</p>
               </div>
+              <p>Модели Wittenborg 9100 готовят не только высококачественные напитки, но и имеют удобный сенсорный экран. 9100 — это новое поколение торговых автоматов с точки зрения дизайна корпуса.</p>
+              <p>Предлагается широкий спектр высококачественных напитков на основе различных технологий производства.</p>
+              <p>Процесс выбора упрощается благодаря интуитивно понятному интерфейсу 10-дюймового экрана высокой чёткости, который визуально направляет пользователя.</p>
             </div>
           </div>
-          <div class="slider-main__item swiper-slide">
-            <img src="img/slider-back_02.jpg" alt="">
-            <div class="slider-main__desc description container">
-              <section>
-                <h1>Начните свой бизнес с нами</h1>
-                <p>Откройте мини-кофейню или торговую точку без сотрудников и постоянного персонала.</p>
-                <p>Поможем подобрать <a href="#">место</a>, <a href="#">оборудование</a> и <a href="#">ассортимент</a>.</p>
-                <a class="slider-main__button button" href="#" title="">подробнее</a>
-              </section>
-              <div class="description__img">
-                <img src="img/slider-machine_02.png" alt="coffee-machines">
-              </div>
-            </div>
-          </div>
-          <div class="slider-main__item swiper-slide">
-              <img src="img/slider-back_03.jpg" alt="">
-            <div class="slider-main__desc description container">
-              <section>
-                <h1>Начните свой бизнес с нами</h1>
-                <p>Откройте мини-кофейню или торговую точку без сотрудников и постоянного персонала.</p>
-                <p>Поможем подобрать <a href="#">место</a>, <a href="#">оборудование</a> и <a href="#">ассортимент</a>.</p>
-                <a class="slider-main__button button" href="#" title="">подробнее</a>
-              </section>
-              <div class="description__img">
-                <img src="img/slider-machine_03.png" alt="coffee-machines">
-              </div>
-            </div>
-          </div>
-        </div>
-          <div class="swiper-pagination"></div>
-          <div class="slider-main__toggle slider-main__toggle--prev swiper-button-prev"></div>
-          <div class="slider-main__toggle slider-main__toggle--next swiper-button-next"></div>
-        </div>
+        </section>
+      </div>
+      <section class="page-main__application application content">
+        <h3>Оставить заявку</h3>
+        <p>Все поля обязательны для заполнения.</p>
+        <form class="application__form form-user" action="" method="post">
+          <fieldset class="form-user__field field-item field-item--profile">
+            <p>
+              <label for="full-name">ФИО:</label>
+              <input id="full-name" name="full-name" type="text">
+            </p>
+            <p>
+              <label for="tel">Номер телефона или e-mail:</label>
+              <input id="tel" name="tel" type="tel">
+            </p>
+          </fieldset>
+          <fieldset class="form-user__field field-item field-item--choice">
+            <p>Что Вас интересует:</p>
+            <ul class="field-item__list">
+              <li class="field-item__item">
+                <input class="visually-hidden" type="radio" name="choice" value="покупка" id="filter-buy">
+                <label for="filter-buy">Покупка</label>
+              </li>
+              <li class="field-item__item">
+                <input class="visually-hidden" type="radio" name="choice" value="аренда" id="filter-rent" checked="checked">
+                <label for="filter-rent">Аренда</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-user__field field-item field-item--comment">
+            <legend class="field-item__title">Комментарий к заказу:</legend>
+            <textarea name="user-text"></textarea>
+          </fieldset>
+          <p class="form-user__note">Нажимая на кнопку «Получить предложение», Вы даёте согласие на обработку Ваших персональных данных в&nbsp;соответствии с <a href="#" title="">указанными условиями.</a> </p>
+          <button class="form-user__btn button">получить предложение</button>
+        </form>
+      </section>
       <section class="page-main__all-vending all-vending content container">
-        <h2><a href="#" title="">Всё</a> для вендинга</h2>
+        <h2>Вам могут понравиться</h2>
         <ul class="all-vending__catalog catalog-mashines">
           <li>
             <a class="catalog-mashines__link" href="#">
@@ -152,7 +173,7 @@
             </a>
           </li>
           <li>
-            <a class="catalog-mashines__link" href="catalog-machines.html">
+            <a class="catalog-mashines__link" href="#">
               <div class="catalog-mashines__img catalog-mashines__img--new label-cofemashines label-cofemashines--new">
                 <img src="img/Necta kikko MAX TO GO.jpg" alt="капсульная кофемашина">
               </div>
@@ -164,7 +185,7 @@
             </a>
           </li>
           <li>
-            <a class="catalog-mashines__link" href="goods.html">
+            <a class="catalog-mashines__link" href="#">
               <div class="catalog-mashines__img">
                 <img src="img/Rheavendors Snack Europa.jpg" alt="капсульная кофемашина">
               </div>
@@ -177,49 +198,8 @@
           </li>
         </ul>
       </section>
-      <section class="page-main__announce announce container content">
-        <h2 class="visually-hidden">Наше производство</h2>
-        <ul class="announce__list">
-          <li class="announce__item">
-            <div class="announce__item__img">
-              <img src="img/announce-img-01.jpg" alt="">
-            </div>
-            <div class="announce__decs">
-              <p>специализированное оборудование, комплектующие и&nbsp;сырьё от лучших прозводителей</p>
-              <a class="button" href="#" title="">кафе и рестораны</a>
-            </div>
-          </li>
-          <li class="announce__item">
-            <div class="announce__item__img">
-              <img src="img/announce-img-02.jpg" alt="">
-            </div>
-            <div class="announce__decs">
-              <p>специализированное оборудование, комплектующие и&nbsp;сырьё от лучших прозводителей</p>
-              <a class="button" href="#" title="">кафе и рестораны</a>
-            </div>
-          </li>
-          <li class="announce__item">
-            <div class="announce__item__img">
-              <img src="img/announce-img-03.jpg" alt="">
-            </div>
-            <div class="announce__decs">
-              <p>специализированное оборудование, комплектующие и&nbsp;сырьё от лучших прозводителей</p>
-              <a class="button" href="#" title="">кафе и рестораны</a>
-            </div>
-          </li>
-          <li class="announce__item">
-            <div class="announce__item__img">
-              <img src="img/announce-img-04.jpg" alt="">
-            </div>
-            <div class="announce__decs">
-              <p>специализированное оборудование, комплектующие и&nbsp;сырьё от лучших прозводителей</p>
-              <a class="button" href="#" title="">кафе и рестораны</a>
-            </div>
-          </li>
-        </ul>
-      </section>
       <section class="page-main__online buy-online content container">
-        <h2>Купите <a href="#" title="">онлайн</a> </h2>
+        <h2>Ингредиенты</h2>
         <ul class="buy-online__goods card-goods">
           <li>
             <a class="card-goods__img card-goods__img--hit label-goods label-goods--hit">
@@ -250,10 +230,10 @@
             <button class="card-goods__price price-card">1200 ₽</button>
           </li>
           <li>
-            <a class="card-goods__img" href="goods-coffe.html">
+            <a class="card-goods__img">
               <img src="img/online-img-05.png" alt="paper-cup">
             </a>
-            <a class="card-goods__link" href="goods-coffe.html">Обжаренный молотый кофе 250 гр&nbsp;</a>
+            <a class="card-goods__link">Обжаренный молотый кофе 250 гр&nbsp;</a>
             <button class="card-goods__price price-card">350 ₽</button>
           </li>
           <li>
@@ -369,7 +349,6 @@
   </div>
   <script src="js/swiper.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/script-slider.min.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 </html>
