@@ -1518,7 +1518,7 @@ li.crumb-item--current {
   position: relative; }
 
 .advantages__item::before {
-  position: absolute;
+  display: block;
   content: "";
   background-repeat: no-repeat;
   background-size: 100% auto; }
@@ -1530,8 +1530,8 @@ li.crumb-item--current {
 .advantages__item--autonomy::before {
   width: 165px;
   height: 145px;
-  top: -60%;
-  left: 1.56vw;
+  top: 0;
+  left: 0;
   background-image: url("../img/prop1.svg"); }
   @media (max-width: 1600px) {
     .advantages__item--autonomy::before {
@@ -1703,6 +1703,7 @@ li.crumb-item--current {
   text-decoration: none;
   -moz-columns: 2;
        columns: 2;
+  margin-top: 8px;
   margin-left: 75px; }
   @media (max-width: 1600px) {
     .advantages .button {
@@ -1715,8 +1716,7 @@ li.crumb-item--current {
   @media (max-width: 1080px) {
     .advantages .button {
       max-width: 313px;
-      margin-left: 34px;
-      margin-top: 8px; } }
+      margin-left: 34px; } }
   @media (max-width: 767px) {
     .advantages .button {
       margin: 0 auto; } }
