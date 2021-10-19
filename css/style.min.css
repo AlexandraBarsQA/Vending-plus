@@ -1713,8 +1713,7 @@ li.crumb-item--current {
   display: flex;
   flex-direction: column;
   height: 100%;
-  text-align: center;
-  outline: 2px solid red; }
+  text-align: center; }
 
 .card-goods a {
   cursor: pointer; }
