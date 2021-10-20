@@ -79,8 +79,7 @@ input[name="toggle"] {
   max-width: 1920px;
   padding-left: 40px;
   padding-right: 40px;
-  margin: 0 auto;
-  outline: 2px solid orange; }
+  margin: 0 auto; }
   @media (max-width: 1600px) {
     .container {
       max-width: 1600px; } }
@@ -1242,8 +1241,7 @@ li.crumb-item--current {
   -moz-column-gap: 2.08vw;
        column-gap: 2.08vw;
   row-gap: 40px;
-  justify-content: center;
-  outline: 2px solid green; }
+  justify-content: center; }
   @media (max-width: 1600px) {
     .catalog-mashines {
       -moz-column-gap: 1.88vw;
@@ -1256,9 +1254,6 @@ li.crumb-item--current {
     .catalog-mashines {
       grid-template-columns: repeat(auto-fit, minmax(180px, -webkit-max-content));
       grid-template-columns: repeat(auto-fit, minmax(180px, max-content)); } }
-
-.catalog-mashines li {
-  outline: 2px solid blue; }
 
 @media (max-width: 1080px) {
   .catalog-mashines li {
