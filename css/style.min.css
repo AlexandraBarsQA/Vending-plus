@@ -675,7 +675,6 @@ a.menu__link-active {
   text-transform: uppercase;
   color: var(--basic-main);
   padding-bottom: 6px;
-  cursor: default;
   border-bottom: 4px solid var(--basic-main); }
   @media (max-width: 1600px) {
     a.menu__link-active {
@@ -861,6 +860,27 @@ a.menu__link-active {
     .page-main__basket {
       padding-top: 53px;
       padding-bottom: 50px; } }
+
+.page-main--delivery {
+  background-image: url("../img/back-cup-cofee.jpg");
+  background-repeat: no-repeat;
+  background-size: 756px 765px;
+  background-size: auto;
+  background-position: 100% 0; }
+  @media (max-width: 1280px) {
+    .page-main--delivery {
+      background-size: 50% auto; } }
+  @media (max-width: 1080px) {
+    .page-main--delivery {
+      background-position: 120% 0; } }
+  @media (max-width: 767px) {
+    .page-main--delivery {
+      background-size: 90% auto;
+      background-position: 250% 0; } }
+  @media (max-width: 480px) {
+    .page-main--delivery {
+      background-size: 150% auto;
+      background-position: -30% 0; } }
 
 .crumbs {
   display: flex;
@@ -2149,6 +2169,27 @@ p.advantages__title {
       padding-top: 53px;
       padding-bottom: 50px; } }
 
+.page-main--delivery {
+  background-image: url("../img/back-cup-cofee.jpg");
+  background-repeat: no-repeat;
+  background-size: 756px 765px;
+  background-size: auto;
+  background-position: 100% 0; }
+  @media (max-width: 1280px) {
+    .page-main--delivery {
+      background-size: 50% auto; } }
+  @media (max-width: 1080px) {
+    .page-main--delivery {
+      background-position: 120% 0; } }
+  @media (max-width: 767px) {
+    .page-main--delivery {
+      background-size: 90% auto;
+      background-position: 250% 0; } }
+  @media (max-width: 480px) {
+    .page-main--delivery {
+      background-size: 150% auto;
+      background-position: -30% 0; } }
+
 .swiper-container {
   margin-left: auto;
   margin-right: auto;
@@ -2305,7 +2346,19 @@ p.advantages__title {
 
 @media (max-width: 767px) {
   .sidebar {
-    max-width: 35%; } }
+    max-width: 50%; } }
+
+@media (max-width: 680px) {
+  .sidebar {
+    max-width: 70%; } }
+
+@media (max-width: 580px) {
+  .sidebar {
+    max-width: 80%; } }
+
+@media (max-width: 480px) {
+  .sidebar {
+    max-width: 100%; } }
 
 .sidebar:not(:first-child) {
   margin-top: 130px; }
@@ -2356,9 +2409,21 @@ a.sidebar__link-active {
 
 .catalog-inner {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 320px 1fr;
   -moz-column-gap: 7vw;
        column-gap: 7vw; }
+  @media (max-width: 1600px) {
+    .catalog-inner {
+      grid-template-columns: 270px 1fr; } }
+  @media (max-width: 1280px) {
+    .catalog-inner {
+      grid-template-columns: 220px 1fr; } }
+  @media (max-width: 1080px) {
+    .catalog-inner {
+      grid-template-columns: 320px 1fr; } }
+  @media (max-width: 992px) {
+    .catalog-inner {
+      grid-template-columns: 270px 1fr; } }
   @media (max-width: 767px) {
     .catalog-inner {
       grid-template-columns: 1fr; } }
@@ -3315,17 +3380,22 @@ a.sidebar__link-active {
 .grain-machines__gallery > p {
   padding-top: 75px;
   padding-left: 32px;
-  padding-right: 495px; }
+  padding-right: 25.8vw; }
   @media (max-width: 1600px) {
     .grain-machines__gallery > p {
       padding-top: 60px;
-      padding-left: 32px;
-      padding-right: 410px; } }
+      padding-left: 27px; } }
   @media (max-width: 1280px) {
     .grain-machines__gallery > p {
       padding-top: 50px;
-      padding-left: 32px;
-      padding-right: 330px; } }
+      padding-left: 21px; } }
+  @media (max-width: 992px) {
+    .grain-machines__gallery > p {
+      font-size: 21px; } }
+  @media (max-width: 767px) {
+    .grain-machines__gallery > p {
+      padding-left: 0;
+      padding-right: 0; } }
 
 .grain-machines__list {
   padding-top: 37px; }
@@ -3450,7 +3520,8 @@ p.basket__sum span {
       display: block; } }
 
 .basket .price-card {
-  width: 143px; }
+  width: 143px;
+  margin-top: 0; }
   @media (max-width: 1600px) {
     .basket .price-card {
       width: 119px; } }
@@ -3472,6 +3543,58 @@ p.basket__sum span {
 
 .hide {
   display: none; }
+
+.delivery h2 {
+  padding-bottom: 75px; }
+  @media (max-width: 1600px) {
+    .delivery h2 {
+      padding-bottom: 60px; } }
+  @media (max-width: 1280px) {
+    .delivery h2 {
+      padding-bottom: 50px; } }
+  @media (max-width: 767px) {
+    .delivery h2 {
+      padding-left: 0; } }
+
+.delivery > p {
+  padding-left: 32px;
+  padding-right: 29.17vw; }
+  @media (max-width: 1600px) {
+    .delivery > p {
+      padding-left: 27px; } }
+  @media (max-width: 1280px) {
+    .delivery > p {
+      padding-left: 21px; } }
+  @media (max-width: 1080px) {
+    .delivery > p {
+      padding-right: 0; } }
+  @media (max-width: 992px) {
+    .delivery > p {
+      font-size: 21px; } }
+  @media (max-width: 767px) {
+    .delivery > p {
+      padding-left: 0; } }
+  @media (max-width: 480px) {
+    .delivery > p {
+      font-size: 17px; } }
+
+.delivery > p:not(:last-child) {
+  margin-bottom: 40px; }
+  @media (max-width: 1600px) {
+    .delivery > p:not(:last-child) {
+      margin-bottom: 30px; } }
+  @media (max-width: 1280px) {
+    .delivery > p:not(:last-child) {
+      margin-bottom: 20px; } }
+  @media (max-width: 1080px) {
+    .delivery > p:not(:last-child) {
+      margin-bottom: 40px; } }
+  @media (max-width: 992px) {
+    .delivery > p:not(:last-child) {
+      margin-bottom: 30px; } }
+  @media (max-width: 767px) {
+    .delivery > p:not(:last-child) {
+      margin-bottom: 20px; } }
 
 .nav-footer {
   display: grid;
