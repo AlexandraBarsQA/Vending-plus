@@ -366,7 +366,7 @@ input[name="toggle"] {
   @media (max-width: 1080px) {
     .navigation__wrap {
       padding-top: 15px;
-      padding-bottom: 25px; } }
+      padding-bottom: 20px; } }
   @media (max-width: 767px) {
     .navigation__wrap {
       padding-top: 13px; } }
@@ -410,7 +410,7 @@ input[name="toggle"] {
 
 @media (max-width: 1080px) {
   .main-nav__menu {
-    margin-top: 30px; } }
+    margin-top: 0px; } }
 
 @media (max-width: 680px) {
   .main-nav__menu {
@@ -577,7 +577,8 @@ input[name="toggle"] {
 @media (max-width: 1080px) {
   .main-nav--opened .main-nav__menu {
     padding-top: 0;
-    padding-bottom: 0; } }
+    padding-bottom: 0;
+    margin-top: 30px; } }
 
 .menu {
   width: 54.17vw;
@@ -657,14 +658,6 @@ input[name="toggle"] {
         font-size: 25px; } }
     .menu li:hover:active {
       opacity: 0.5; }
-
-@media (max-width: 680px) {
-  .menu li:first-child {
-    margin-top: 35px; } }
-
-@media (max-width: 480px) {
-  .menu li:first-child {
-    margin-top: 30px; } }
 
 .menu a {
   color: var(--basic-white);
@@ -881,6 +874,18 @@ a.menu__link-active {
     .page-main--delivery {
       background-size: 150% auto;
       background-position: -30% 0; } }
+
+.page-main__about {
+  padding-top: 60px;
+  padding-bottom: 74px; }
+  @media (max-width: 1600px) {
+    .page-main__about {
+      padding-top: 65px;
+      padding-bottom: 62px; } }
+  @media (max-width: 1280px) {
+    .page-main__about {
+      padding-top: 53px;
+      padding-bottom: 50px; } }
 
 .crumbs {
   display: flex;
@@ -1251,6 +1256,17 @@ li.crumb-item--current {
       font-size: 23px;
       top: 50%;
       transform: translateY(-50%); } }
+  @media (max-width: 680px) {
+    .label-cofemashines::before {
+      width: 119px;
+      height: 43px;
+      font-size: 20px;
+      right: 20%; } }
+  @media (max-width: 480px) {
+    .label-cofemashines::before {
+      width: 95px;
+      height: 34px;
+      font-size: 16px; } }
 
 .label-cofemashines--hit::before {
   content: "хит сезона";
@@ -1356,23 +1372,50 @@ li.crumb-item--current {
            column-gap: 1.8vw; } }
   @media (max-width: 1080px) {
     .catalog-mashines {
-      grid-template-columns: repeat(auto-fit, minmax(180px, -webkit-max-content));
-      grid-template-columns: repeat(auto-fit, minmax(180px, max-content)); } }
+      grid-template-columns: repeat(auto-fit, minmax(120px, -webkit-max-content));
+      grid-template-columns: repeat(auto-fit, minmax(120px, max-content)); } }
+  @media (max-width: 767px) {
+    .catalog-mashines {
+      grid-template-columns: 1fr; } }
 
 @media (max-width: 1080px) {
-  .catalog-mashines li {
+  .catalog-mashines--index li {
     grid-column: span 2; } }
 
+@media (max-width: 767px) {
+  .catalog-mashines--index li {
+    grid-column: 1; } }
+
 @media (max-width: 992px) {
-  .catalog-mashines li {
+  .catalog-mashines--index li:nth-child(3) {
+    grid-column: 1 / 3; } }
+
+@media (max-width: 767px) {
+  .catalog-mashines--index li:nth-child(3) {
     grid-column: 1; } }
 
 @media (max-width: 1080px) {
-  .catalog-mashines li:nth-child(5) {
+  .catalog-mashines--index li:nth-child(4) {
     grid-column: 2 / 4; } }
 
 @media (max-width: 992px) {
-  .catalog-mashines li:nth-child(5) {
+  .catalog-mashines--index li:nth-child(4) {
+    grid-column: 3 / 5; } }
+
+@media (max-width: 767px) {
+  .catalog-mashines--index li:nth-child(4) {
+    grid-column: 1; } }
+
+@media (max-width: 1080px) {
+  .catalog-mashines--index li:nth-child(5) {
+    grid-column: 4 / 6; } }
+
+@media (max-width: 992px) {
+  .catalog-mashines--index li:nth-child(5) {
+    grid-column: 2 / 4; } }
+
+@media (max-width: 767px) {
+  .catalog-mashines--index li:nth-child(5) {
     grid-column: 1; } }
 
 .catalog-mashines__link {
@@ -1447,6 +1490,10 @@ li.crumb-item--current {
   @media (max-width: 1080px) {
     .catalog-mashines__brand {
       font-size: 25px; } }
+
+@media (max-width: 767px) {
+  .catalog-mashines--index .label-cofemashines::before {
+    right: 20%; } }
 
 .announce {
   padding: 0; }
@@ -2190,6 +2237,18 @@ p.advantages__title {
       background-size: 150% auto;
       background-position: -30% 0; } }
 
+.page-main__about {
+  padding-top: 60px;
+  padding-bottom: 74px; }
+  @media (max-width: 1600px) {
+    .page-main__about {
+      padding-top: 65px;
+      padding-bottom: 62px; } }
+  @media (max-width: 1280px) {
+    .page-main__about {
+      padding-top: 53px;
+      padding-bottom: 50px; } }
+
 .swiper-container {
   margin-left: auto;
   margin-right: auto;
@@ -2428,6 +2487,10 @@ a.sidebar__link-active {
     .catalog-inner {
       grid-template-columns: 1fr; } }
 
+@media (max-width: 992px) {
+  .catalog-inner--grain {
+    grid-template-columns: 1fr; } }
+
 .catalog-inner__sidebar {
   margin-top: 40px; }
   @media (max-width: 1600px) {
@@ -2440,6 +2503,9 @@ a.sidebar__link-active {
     .catalog-inner__sidebar {
       margin-top: 0;
       margin-bottom: 35px; } }
+
+ul.catalog-inner__sidebar {
+  margin-bottom: 0; }
 
 .catalog-inner h2 {
   padding-left: 32px; }
@@ -2466,6 +2532,39 @@ a.sidebar__link-active {
   grid-template-columns: repeat(4, minmax(180px, 384px));
   -moz-column-gap: 2.08vw;
        column-gap: 2.08vw; }
+  @media (max-width: 1180px) {
+    .catalog-inner .catalog-mashines {
+      grid-template-columns: repeat(3, minmax(180px, 384px)); } }
+  @media (max-width: 1080px) {
+    .catalog-inner .catalog-mashines {
+      grid-template-columns: repeat(2, minmax(180px, 384px)); } }
+  @media (max-width: 992px) {
+    .catalog-inner .catalog-mashines {
+      -moz-column-gap: 5vw;
+           column-gap: 5vw; } }
+  @media (max-width: 680px) {
+    .catalog-inner .catalog-mashines {
+      grid-template-columns: 1fr; } }
+
+@media (max-width: 767px) {
+  .catalog-inner .sidebar {
+    max-width: 50%; } }
+
+@media (max-width: 680px) {
+  .catalog-inner .sidebar {
+    max-width: 70%; } }
+
+@media (max-width: 580px) {
+  .catalog-inner .sidebar {
+    max-width: 80%; } }
+
+@media (max-width: 480px) {
+  .catalog-inner .sidebar {
+    max-width: 100%; } }
+
+@media (max-width: 992px) {
+  .catalog-inner--grain .sidebar {
+    max-width: 50%; } }
 
 .item-product__wrap {
   display: grid;
@@ -3377,6 +3476,14 @@ a.sidebar__link-active {
     .field-item--comment textarea {
       min-height: 155px; } }
 
+@media (max-width: 992px) {
+  .grain-machines__gallery {
+    margin-top: 35px; } }
+
+@media (max-width: 992px) {
+  .grain-machines__gallery h2 {
+    text-align: center; } }
+
 .grain-machines__gallery > p {
   padding-top: 75px;
   padding-left: 32px;
@@ -3389,6 +3496,9 @@ a.sidebar__link-active {
     .grain-machines__gallery > p {
       padding-top: 50px;
       padding-left: 21px; } }
+  @media (max-width: 1080px) {
+    .grain-machines__gallery > p {
+      padding-right: 0; } }
   @media (max-width: 992px) {
     .grain-machines__gallery > p {
       font-size: 21px; } }
@@ -3405,6 +3515,42 @@ a.sidebar__link-active {
   @media (max-width: 1280px) {
     .grain-machines__list {
       padding-top: 24px; } }
+
+@media (max-width: 1080px) {
+  .grain-machines__list .label-cofemashines::before {
+    width: 119px;
+    height: 43px;
+    font-size: 20px; } }
+
+@media (max-width: 992px) {
+  .grain-machines__list .label-cofemashines::before {
+    width: 145px;
+    height: 50px;
+    font-size: 23px; } }
+
+@media (max-width: 767px) {
+  .grain-machines__list .label-cofemashines::before {
+    width: 119px;
+    height: 43px;
+    font-size: 20px; } }
+
+@media (max-width: 680px) {
+  .grain-machines__list .label-cofemashines::before {
+    width: 145px;
+    height: 50px;
+    font-size: 23px; } }
+
+@media (max-width: 580px) {
+  .grain-machines__list .label-cofemashines::before {
+    width: 119px;
+    height: 43px;
+    font-size: 20px; } }
+
+@media (max-width: 480px) {
+  .grain-machines__list .label-cofemashines::before {
+    width: 95px;
+    height: 34px;
+    font-size: 16px; } }
 
 .basket__list {
   margin-top: 120px;
@@ -3595,6 +3741,22 @@ p.basket__sum span {
   @media (max-width: 767px) {
     .delivery > p:not(:last-child) {
       margin-bottom: 20px; } }
+
+.about-company h2 {
+  position: relative;
+  width: 1438px;
+  height: 386px;
+  margin: 0 auto;
+  outline: 2px solid red; }
+
+.about-company__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .nav-footer {
   display: grid;
