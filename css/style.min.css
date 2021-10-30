@@ -110,11 +110,11 @@ input[name="toggle"] {
   line-height: 1.04819;
   font-variation-settings: 'wght' 700, 'wdth' 75;
   color: var(--basic-main);
-  padding-left: 7.81vw; }
+  margin-left: 7.81vw; }
   @media (max-width: 1600px) {
     .content h2 {
       font-size: 69px;
-      padding-left: 7.8vw; } }
+      margin-left: 7.8vw; } }
   @media (max-width: 1280px) {
     .content h2 {
       font-size: 55px; } }
@@ -124,12 +124,12 @@ input[name="toggle"] {
   @media (max-width: 992px) {
     .content h2 {
       font-size: 60px;
-      padding-left: 30px; } }
+      margin-left: 30px; } }
   @media (max-width: 767px) {
     .content h2 {
       font-size: 50px;
       text-align: center;
-      padding-left: 0; } }
+      margin-left: 0; } }
   @media (max-width: 480px) {
     .content h2 {
       font-size: 42px; } }
@@ -808,10 +808,10 @@ a.menu__link-active {
       background-size: 50% auto; } }
   @media (max-width: 1080px) {
     .page-main--brands-item {
-      background-position: 120% 0; } }
+      background-position: 100% 0; } }
   @media (max-width: 767px) {
     .page-main--brands-item {
-      background-size: 90% auto;
+      background-size: 85% auto;
       background-position: 250% 0; } }
   @media (max-width: 480px) {
     .page-main--brands-item {
@@ -2359,10 +2359,10 @@ p.advantages__title {
       background-size: 50% auto; } }
   @media (max-width: 1080px) {
     .page-main--brands-item {
-      background-position: 120% 0; } }
+      background-position: 100% 0; } }
   @media (max-width: 767px) {
     .page-main--brands-item {
-      background-size: 90% auto;
+      background-size: 85% auto;
       background-position: 250% 0; } }
   @media (max-width: 480px) {
     .page-main--brands-item {
@@ -2888,6 +2888,10 @@ a.sidebar__link-active {
   .catalog-inner--grain {
     grid-template-columns: 1fr; } }
 
+@media (max-width: 992px) {
+  .catalog-inner--brand {
+    grid-template-columns: 1fr; } }
+
 .catalog-inner__sidebar {
   margin-top: 40px; }
   @media (max-width: 1600px) {
@@ -2898,20 +2902,22 @@ a.sidebar__link-active {
       margin-top: 26px; } }
   @media (max-width: 767px) {
     .catalog-inner__sidebar {
-      margin-top: 0;
-      margin-bottom: 35px; } }
+      margin-top: 0; } }
 
 ul.catalog-inner__sidebar {
   margin-bottom: 0; }
 
+.catalog-inner h1,
 .catalog-inner h2 {
-  padding-left: 32px; }
+  margin-left: 32px; }
   @media (max-width: 1600px) {
+    .catalog-inner h1,
     .catalog-inner h2 {
-      padding-left: 27px; } }
+      margin-left: 27px; } }
   @media (max-width: 1280px) {
+    .catalog-inner h1,
     .catalog-inner h2 {
-      padding-left: 21px; } }
+      margin-left: 21px; } }
 
 .catalog-inner .card-goods {
   margin-top: 42px; }
@@ -2962,6 +2968,34 @@ ul.catalog-inner__sidebar {
 @media (max-width: 992px) {
   .catalog-inner--grain .sidebar {
     max-width: 50%; } }
+
+@media (max-width: 680px) {
+  .catalog-inner--grain .sidebar {
+    max-width: 70%; } }
+
+@media (max-width: 580px) {
+  .catalog-inner--grain .sidebar {
+    max-width: 80%; } }
+
+@media (max-width: 480px) {
+  .catalog-inner--grain .sidebar {
+    max-width: 100%; } }
+
+@media (max-width: 992px) {
+  .catalog-inner--brand .sidebar {
+    max-width: 50%; } }
+
+@media (max-width: 680px) {
+  .catalog-inner--brand .sidebar {
+    max-width: 70%; } }
+
+@media (max-width: 580px) {
+  .catalog-inner--brand .sidebar {
+    max-width: 80%; } }
+
+@media (max-width: 480px) {
+  .catalog-inner--brand .sidebar {
+    max-width: 100%; } }
 
 .item-product__wrap {
   display: grid;
@@ -3839,11 +3873,16 @@ ul.catalog-inner__sidebar {
 
 @media (max-width: 992px) {
   .grain-machines__gallery {
-    margin-top: 35px; } }
+    margin-top: 60px; } }
+
+@media (max-width: 767px) {
+  .grain-machines__gallery {
+    margin-top: 45px; } }
 
 @media (max-width: 992px) {
   .grain-machines__gallery h2 {
-    text-align: center; } }
+    text-align: center;
+    margin-left: 0; } }
 
 .grain-machines__gallery > p {
   padding-top: 75px;
@@ -3861,6 +3900,10 @@ ul.catalog-inner__sidebar {
     .grain-machines__gallery > p {
       font-size: 24px;
       padding-right: 0; } }
+  @media (max-width: 992px) {
+    .grain-machines__gallery > p {
+      padding-top: 30px;
+      padding-left: 0; } }
   @media (max-width: 767px) {
     .grain-machines__gallery > p {
       padding-left: 0;
@@ -4080,24 +4123,6 @@ p.basket__sum span {
     .delivery > p {
       padding-left: 0; } }
 
-.delivery > p:not(:last-child) {
-  margin-bottom: 40px; }
-  @media (max-width: 1600px) {
-    .delivery > p:not(:last-child) {
-      margin-bottom: 30px; } }
-  @media (max-width: 1280px) {
-    .delivery > p:not(:last-child) {
-      margin-bottom: 20px; } }
-  @media (max-width: 1080px) {
-    .delivery > p:not(:last-child) {
-      margin-bottom: 40px; } }
-  @media (max-width: 992px) {
-    .delivery > p:not(:last-child) {
-      margin-bottom: 30px; } }
-  @media (max-width: 767px) {
-    .delivery > p:not(:last-child) {
-      margin-bottom: 20px; } }
-
 .about-company h2 {
   max-width: 1438px;
   padding-left: 0;
@@ -4148,6 +4173,94 @@ p.basket__sum span {
   display: flex;
   align-items: flex-end;
   justify-content: center; }
+
+@media (max-width: 992px) {
+  .brands-item__block {
+    margin-top: 60px; } }
+
+@media (max-width: 767px) {
+  .brands-item__block {
+    margin-top: 45px; } }
+
+@media (max-width: 580px) {
+  .brands-item__block {
+    margin-top: 30px; } }
+
+.brands-item__gallery {
+  margin-top: 70px; }
+  @media (max-width: 1600px) {
+    .brands-item__gallery {
+      margin-top: 50px; } }
+  @media (max-width: 1280px) {
+    .brands-item__gallery {
+      margin-top: 45px; } }
+  @media (max-width: 1080px) {
+    .brands-item__gallery {
+      margin-top: 70px; } }
+  @media (max-width: 767px) {
+    .brands-item__gallery {
+      margin-top: 45px; } }
+
+.brands-item h1 {
+  width: 174px;
+  margin-bottom: 93px; }
+  @media (max-width: 1080px) {
+    .brands-item h1 {
+      margin-left: 0; } }
+  @media (max-width: 992px) {
+    .brands-item h1 {
+      margin-bottom: 50px; } }
+  @media (max-width: 767px) {
+    .brands-item h1 {
+      margin: 0 auto 50px; } }
+  @media (max-width: 580px) {
+    .brands-item h1 {
+      margin: 0 auto 30px; } }
+
+@media (max-width: 1080px) {
+  .brands-item h2 {
+    margin-left: 0; } }
+
+.brands-item__block > p {
+  padding-left: 32px;
+  padding-right: 29.17vw; }
+  @media (max-width: 1600px) {
+    .brands-item__block > p {
+      padding-left: 27px; } }
+  @media (max-width: 1280px) {
+    .brands-item__block > p {
+      padding-left: 21px; } }
+  @media (max-width: 1080px) {
+    .brands-item__block > p {
+      padding-left: 0;
+      padding-right: 0; } }
+  @media (max-width: 767px) {
+    .brands-item__block > p {
+      padding-left: 0; } }
+
+.brands-item__goods {
+  margin-top: 90px; }
+  @media (max-width: 1600px) {
+    .brands-item__goods {
+      margin-top: 60px; } }
+  @media (max-width: 1280px) {
+    .brands-item__goods {
+      margin-top: 45px; } }
+  @media (max-width: 1080px) {
+    .brands-item__goods {
+      margin-top: 90px; } }
+  @media (max-width: 767px) {
+    .brands-item__goods {
+      margin-top: 45px; } }
+
+.brands-item__gallery .catalog-mashines {
+  padding-top: 65px; }
+  @media (max-width: 1600px) {
+    .brands-item__gallery .catalog-mashines {
+      padding-top: 29px; } }
+  @media (max-width: 1280px) {
+    .brands-item__gallery .catalog-mashines {
+      padding-top: 24px; } }
 
 .nav-footer {
   display: grid;
