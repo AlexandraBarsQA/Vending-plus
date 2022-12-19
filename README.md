@@ -1,1 +1,1 @@
-# Vending-plus
+#### Интернет-магазин "VENDING PLUS"
